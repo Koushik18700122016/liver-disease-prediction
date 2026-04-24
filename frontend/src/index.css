@@ -1,0 +1,47 @@
+.app-container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.glass {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
+
+/* Smooth animation */
+.glass {
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-5px);
+}
+
+/* Slider styling */
+input[type="range"] {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+}
